@@ -13,7 +13,7 @@ const theme: DefaultTheme = {
   darkGrey: "#31343e",
 };
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: any) {
   return (
     <>
       <ThemeProvider theme={theme}>
