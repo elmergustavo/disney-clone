@@ -2,7 +2,7 @@ import { Session } from "next-auth";
 import { signOut } from "next-auth/react";
 import React from "react";
 import { DropDown, NavMenu, SignOut, UserImg } from "../styles";
-import Link from "next/link";
+import Link from "next/link"
 
 interface Props {
   session: Session;
@@ -10,17 +10,18 @@ interface Props {
 
 function SignedInHeader({ session }: Props) {
   const image = session?.user?.image as string;
+  console.log(image)
   const name = session?.user?.name as string;
   return (
     <>
       <NavMenu>
-        <Link href="/">
-          <a>
-            <img src="/images/home-icon.png" alt="" />
-            <span>HOME</span>
-          </a>
-        </Link>
-
+      <Link href="/">
+      <a>
+          <img src="/images/home-icon.png" alt="" />
+          <span>HOME</span>
+        </a>
+      </Link>
+      
         <a>
           <img src="/images/search-icon.png" alt="Search icon" />
           <span>SEARCH</span>

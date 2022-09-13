@@ -88,6 +88,7 @@ export const NavMenu = styled.div`
 `;
 export const UserImg = styled.img`
   height: 100%;
+  width: 100%;
 `;
 
 export const DropDown = styled.div`
